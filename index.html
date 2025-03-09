@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas 💱</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Conversor de Moedas 💱</h2>
+
+        <label for="amount">Valor:</label>
+        <input type="number" id="amount" placeholder="Digite o valor" min="0">
+
+        <div class="currency-container">
+            <div class="currency-group">
+                <label for="fromCurrency">De:</label>
+                <select id="fromCurrency"></select>
+            </div>
+
+            <button id="invertBtn">🔄</button>
+
+            <div class="currency-group">
+                <label for="toCurrency">Para:</label>
+                <select id="toCurrency"></select>
+            </div>
+        </div>
+
+        <button id="convertBtn">Converter</button>
+
+        <h3 id="result">Resultado: --</h3>
+
+        <p class="api-info">💡 As taxas de câmbio são fornecidas pelas APIs <br> <a href="https://www.exchangerate-api.com/" target="_blank">ExchangeRate-API</a> e <a href="https://www.coingecko.com/pt/api" target="_blank">CoinGecko</a>.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

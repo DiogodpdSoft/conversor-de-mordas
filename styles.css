@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+input {
+    background: #444;
+    color: white;
+    text-align: center;
+}
+
+select {
+    background: #555;
+    color: white;
+}
+
+/* Agrupar selects e botão de inverter */
+.currency-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Ajustar largura dos selects */
+.currency-group {
+    width: 45%;
+}
+
+/* Ajuste do botão de inverter */
+#invertBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#invertBtn:hover {
+    background: #e68900;
+}
+
+button {
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+h3 {
+    margin-top: 15px;
+    color: #ffcc00;
+}
+
+/* Estilização do rodapé das APIs */
+.api-info {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.api-info a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.api-info a:hover {
+    text-decoration: underline;
+}
